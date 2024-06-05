@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1shpbqf" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.16.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.3.0">
+  <decision id="Decision_1ol6wuz" name="GetDistortionOwner">
+    <decisionTable id="DecisionTable_1vhwoxv">
+      <input id="Input_1" label="Distortion type">
+        <inputExpression id="InputExpression_1" typeRef="number">
+          <text>distortion.distortionid</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1o89do9" label="Distortion class">
+        <inputExpression id="LiteralExpression_15gtern" typeRef="string">
+          <text>distortion.distortionclass</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Owner" name="owner" typeRef="string" />
+      <rule id="DecisionRule_0m4wxm8">
+        <inputEntry id="UnaryTests_0riti1n">
+          <text>1182</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13g5k7l">
+          <text>"cracks","crack"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0dclr9a">
+          <text>"cracks department"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0bec9vl">
+        <inputEntry id="UnaryTests_1mz2313">
+          <text>1172</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1xv49kz">
+          <text>"potholes","pothole"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0amhbtd">
+          <text>"potholes department"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0axq6wj">
+        <inputEntry id="UnaryTests_01v1nni">
+          <text>1172</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1mmxlev">
+          <text>"bad painting"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_06ltkw9">
+          <text>"roads and services department"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0hklx74">
+        <inputEntry id="UnaryTests_050sd0i">
+          <text>1182</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1q8v9um">
+          <text>"bad painting"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1l8mhrx">
+          <text>"roads and services department"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0qi86tf">
+        <inputEntry id="UnaryTests_1yjc47k">
+          <text>1182</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_00vrph7">
+          <text>"aligator_cracks"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_07t50zp">
+          <text>"aligator cracks department"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_1ol6wuz">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
