@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1tmrgjq" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.16.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.3.0">
+  <decision id="Decision_Mapper" name="Decision Mapper">
+    <decisionTable id="DecisionTable_0iu5ztq">
+      <input id="Input_1" label="Distortion Class">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>manualDistortionClass</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Distortion ID" name="distortion.distortionid" typeRef="number" />
+      <rule id="DecisionRule_1kvxp9v">
+        <inputEntry id="UnaryTests_037eqx2">
+          <text>"cracks"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1xlswip">
+          <text>1182</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1qdh2t6">
+        <inputEntry id="UnaryTests_1rci4d0">
+          <text>"potholes"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0f7vn05">
+          <text>1172</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1iowilw">
+        <inputEntry id="UnaryTests_0e48m2s">
+          <text>"bad painting"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_133298k">
+          <text>1172</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1082rn7">
+        <inputEntry id="UnaryTests_09std1f">
+          <text>"aligator_cracks"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1n77lij">
+          <text>1182</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_Mapper">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
