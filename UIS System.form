@@ -1,0 +1,33 @@
+{
+  "components": [
+    {
+      "text": "UIS System will resolve the distortion",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_0fbiknh",
+        "columns": null
+      },
+      "id": "Field_0jyakwf"
+    },
+    {
+      "label": "Distortion Resolved?",
+      "type": "checkbox",
+      "layout": {
+        "row": null,
+        "columns": null
+      },
+      "id": "Field_07hc2sd",
+      "key": "distortion_resolved"
+    }
+  ],
+  "type": "default",
+  "id": "Form_1vxcs9p",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.3.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.16.0"
+  },
+  "schemaVersion": 11
+}
