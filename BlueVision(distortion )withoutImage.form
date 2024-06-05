@@ -1,0 +1,57 @@
+{
+  "components": [
+    {
+      "text": "There are no distortions available in the upload image .Please add the distortion ",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_1fdlewp",
+        "columns": null
+      },
+      "id": "Field_0cob7a9"
+    },
+    {
+      "values": [
+        {
+          "label": "Cracks",
+          "value": "cracks"
+        },
+        {
+          "label": "Potholes",
+          "value": "potholes"
+        },
+        {
+          "label": "Bad painting",
+          "value": "bad painting"
+        }
+      ],
+      "label": "Enter distortion class",
+      "type": "select",
+      "layout": {
+        "row": "Row_0dbrfj5",
+        "columns": null
+      },
+      "id": "Field_0j8mlvs",
+      "key": "manualDistortionClass"
+    },
+    {
+      "label": "Enter description",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_0iw4foc",
+        "columns": null
+      },
+      "id": "Field_0urc1q7",
+      "key": "distortionDescription"
+    }
+  ],
+  "type": "default",
+  "id": "Form_0wzcmgm",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.3.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.16.0"
+  },
+  "schemaVersion": 11
+}
